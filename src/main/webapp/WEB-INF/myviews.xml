@@ -10,5 +10,7 @@
         ">
         
         <bean id="studentsExcel" class="in.nareshit.raghu.excel.StudentExcelView"></bean>
+        <bean id="studentsPdf" class="in.nareshit.raghu.pdf.StudentPdfView"></bean>
+        
 </beans>
         

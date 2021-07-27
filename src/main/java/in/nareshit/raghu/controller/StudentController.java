@@ -32,4 +32,21 @@ public class StudentController {
 		m.addObject("list", list);
 		return m;
 	}
+	
+	
+	@GetMapping("/pdf")
+	public ModelAndView showPdf() {
+		List<Student> list = Arrays.asList(
+					new Student(101, "AA", 200.0),
+					new Student(102, "BB", 300.0),
+					new Student(103, "CC", 400.0),
+					new Student(104, "DD", 500.0),
+					new Student(105, "EE", 600.0)
+				);
+		ModelAndView m = new ModelAndView();
+		m.setViewName("studentsPdf");//.pdf
+		
+		m.addObject("list", list);
+		return m;
+	}
 }
